@@ -1,0 +1,31 @@
+default_agent: hackathon_strands_agent_workflow
+agents:
+  hackathon_strands_agent_workflow:
+    name: hackathon_strands_agent_workflow
+    entrypoint: /home/ubuntu/Agent-core/Hackathon/main.py
+    platform: linux/arm64
+    container_runtime: none
+    aws:
+      execution_role: arn:aws:iam::637423349442:role/AmazonBedrockAgentCoreSDKRuntime-us-east-1-caf3e3ee6f
+      execution_role_auto_create: false
+      account: '637423349442'
+      region: us-east-1
+      ecr_repository: 637423349442.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-hackathon_strands_agent_workflow
+      ecr_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+    bedrock_agentcore:
+      agent_id: hackathon_strands_agent_workflow-66XZsW3yDm
+      agent_arn: arn:aws:bedrock-agentcore:us-east-1:637423349442:runtime/hackathon_strands_agent_workflow-66XZsW3yDm
+      agent_session_id: null
+    codebuild:
+      project_name: bedrock-agentcore-hackathon_strands_agent_workflow-builder
+      execution_role: arn:aws:iam::637423349442:role/AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-caf3e3ee6f
+      source_bucket: bedrock-agentcore-codebuild-sources-637423349442-us-east-1
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
