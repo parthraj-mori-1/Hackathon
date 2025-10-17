@@ -234,7 +234,7 @@ For questions or issues:
 
 ---
 
-Built with ❤️ for the hackathon by [Your Team Name]
+Built with ❤️ for the hackathon
 ## 🎯 Hackathon Tips
 
 1. **Quick Demo Setup**: Use Streamlit interface for fastest deployment
