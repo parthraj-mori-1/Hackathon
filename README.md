@@ -116,7 +116,28 @@ streamlit run streamlit_ui.py
 
 ### 📄 SOW Generator  
 - Creates professional Statement of Work documents
-- Uses meeting context for requirated communication
+- Uses meeting context for requirements gathering
+- Outputs formatted business documents
+
+### 🏛️ Architecture Diagram Generator
+The Architecture Tool automatically generates professional system architecture diagrams from meeting transcripts or user requirements. 
+
+**Key Features:**
+- **Intelligent Analysis**: Analyzes meeting content to identify system components, services, and relationships
+- **Visual Generation**: Creates clean, professional diagrams using Graphviz
+- **Multiple Formats**: Supports various architectural patterns (microservices, monolithic, cloud-native)
+- **Auto-Layout**: Automatically arranges components for optimal readability
+- **S3 Integration**: Stores generated diagrams with public URLs for easy sharing
+
+**Example Output:**
+![Architecture Diagram Example](https://hackathon-result-1.s3.us-east-1.amazonaws.com/Hackathon_5.jpg)
+
+**Usage Examples:**
+- `"Create architecture diagram for microservices setup"`
+- `"Generate system design from meeting transcript"`
+- `"Design cloud architecture for the discussed solution"`
+
+The tool intelligently extracts technical requirements from conversations and transforms them into visual representations that stakeholders can easily understand.
 - **Web Search**: Real-time web search capabilities for market research
 - **Memory Management**: Persistent conversation memory across sessions
 
