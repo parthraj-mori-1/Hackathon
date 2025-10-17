@@ -130,7 +130,7 @@ The Architecture Tool automatically generates professional system architecture d
 - **S3 Integration**: Stores generated diagrams with public URLs for easy sharing
 
 **Example Output:**
-![Architecture Diagram Example](https://hackathon-result-1.s3.us-east-1.amazonaws.com/Hackathon_5.jpg)
+![Architecture Diagram Example](https://hackathon-result-1.s3.us-east-1.amazonaws.com/architecture_diagram_4.png)
 
 **Usage Examples:**
 - `"Create architecture diagram for microservices setup"`
