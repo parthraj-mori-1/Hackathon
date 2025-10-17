@@ -138,8 +138,37 @@ The Architecture Tool automatically generates professional system architecture d
 - `"Design cloud architecture for the discussed solution"`
 
 The tool intelligently extracts technical requirements from conversations and transforms them into visual representations that stakeholders can easily understand.
-- **Web Search**: Real-time web search capabilities for market research
-- **Memory Management**: Persistent conversation memory across sessions
+
+### 🎥 Video Transcript Tool
+The Video Transcript Tool processes video files stored in S3 and extracts accurate transcriptions for further analysis and document generation.
+
+**Key Features:**
+- **S3 Integration**: Directly processes videos from AWS S3 buckets
+- **High Accuracy**: Uses advanced AI models for precise speech-to-text conversion
+- **Memory Storage**: Automatically stores transcripts in conversation memory for other tools
+- **Multi-Format Support**: Handles various video formats (MP4, AVI, MOV, etc.)
+- **Batch Processing**: Efficient processing of multiple video files
+
+**Security Note**: For security reasons, the system currently supports only pre-uploaded videos in our secure S3 bucket.
+
+**Example Usage:**
+Try the transcript tool with our sample video:
+```
+"Transcribe video from s3://sales-assistant-3/GenerativeAIexplainedin2minutes.mp4"
+```
+
+**Usage Examples:**
+- `"Transcribe the meeting video from S3"`
+- `"Extract transcript from s3://sales-assistant-3/GenerativeAIexplainedin2minutes.mp4"`
+- `"Process video transcript for MOM generation"`
+
+**Workflow Integration:**
+1. Video gets transcribed and stored in memory
+2. Transcript becomes available for MOM generation
+3. SOW creation can use transcript context
+4. Architecture diagrams can be generated from technical discussions
+
+The transcript serves as the foundation for all other document generation tools, making it a crucial first step in the sales workflow automation.
 
 ### Tools & Integrations
 - **Architecture Tool**: Generate system architecture diagrams
